@@ -44,9 +44,31 @@ Did you spend an entire Sunday figuring out a hyper-specific setup that the inte
 
 1. Fork the repo.
 2. Create a new `.md` file in the appropriate topic directory.
-3. Submit a Pull Request.
+3. Feel free to use the header from this file. Don't forget to update the path :)
+```html
+<div align="center">
+  <sub><b>You are here:</b> <a href="#readme">Home</a> > your > path > here </sub>
+  
+  <br>
+  <h1>Okay Jarvis, how do I...</h1>
 
-If you wish to keep your guide from being indexed on my portfolio site, please mark it with the tag "no-index". For index guides, credits will be attributed. Currently, guides using MDX and similar are not being parsed, though I might add that in the future :) 
+  <p>
+    <i>A collection of "I spent 4 hours figuring this out so you don't have to" guides.</i>
+  </p>
+
+  <p>
+    <img src="https://img.shields.io/badge/Open-Source-brightgreen?style=for-the-badge&logo=dependabot" alt="Status" />
+    <img src="https://img.shields.io/badge/PRs-welcome-blue?style=for-the-badge&logo=github" alt="PRs Welcome" />
+    <img src="https://img.shields.io/badge/license-MIT-purple?style=for-the-badge" alt="License" />
+  </p>
+</div>
+
+<hr>
+
+```
+4. Submit a Pull Request.
+
+If you wish to keep your guide from being indexed on my portfolio site, please mark it with the tag "no-index". For indexed guides, credits will be attributed. Currently, guides using MDX and similar are not being parsed, though I might add that in the future :) 
 
 ---
 <div align="center">
