@@ -17,7 +17,7 @@
   <!-- tags:start -->
   <p>
     <img src="https://img.shields.io/badge/ASM-blue?style=for-the-badge" alt="tag:ASM" />
-    <img src="https://img.shields.io/badge/CLion-blue?style=for-the-badge" alt="tag:CLion" />
+    <img src="https://img.shields.io/badge/CLion-yellow?style=for-the-badge" alt="tag:CLion" />
     <img src="https://img.shields.io/badge/Setup-orange?style=for-the-badge" alt="tag:Setup" />
     <img src="https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge" alt="tag:Beginner Friendly" />
   </p>
@@ -41,7 +41,7 @@ This guide walks through the four pieces:
 3. Setting up **file-and-code templates** for both 32-bit and 64-bit projects.
 4. Making the **debugger** actually show registers.
 
-> **Scope:** this is the **pure-ASM** flavor — programs built entirely from `.asm` files that talk to the kernel directly via syscalls. If you want to call NASM functions from C/C++ (or call C from your assembly), see [`clion-nasm-c-interop.md`](./clion-nasm-c-interop.md) *(coming soon — different CMake setup, libc linkage, System V calling convention).*
+> **Scope:** this is the **pure-ASM** flavor — programs built entirely from `.asm` files that talk to the kernel directly via syscalls. If you want C ↔ NASM interop instead (calling NASM functions from C, or calling libc from your assembly), it's a one-line change: drop `-nostdlib` from the `target_link_options` line in the CMakeLists template. CMake will then pull in libc and the C runtime, giving you `printf`, `malloc`, etc., and you'll follow the System V calling convention for cross-language calls.
 
 ---
 
@@ -305,7 +305,7 @@ CLion's default debug view doesn't show CPU registers — you have to drop into 
 
 **x86 / x86-64 references**
 - [Intel® 64 and IA-32 Architectures Software Developer's Manual](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html) — Volume 2 is the instruction-set reference; Volume 3 covers system programming. Hefty but authoritative.
-- [System V AMD64 ABI](https://gitlab.com/x86-psABIs/x86-64-ABI) — calling convention, register usage, stack layout. Required reading before writing assembly functions you'll call from C (you'll want this for the upcoming interop guide).
+- [System V AMD64 ABI](https://gitlab.com/x86-psABIs/x86-64-ABI) — calling convention, register usage, stack layout. Required reading before writing assembly functions you'll call from C (i.e. once you've dropped `-nostdlib` for the interop flow).
 - [x86 Assembly (Wikibooks)](https://en.wikibooks.org/wiki/X86_Assembly) — readable, free, and a far gentler entry point than the Intel SDM.
 
 **Linux syscalls**

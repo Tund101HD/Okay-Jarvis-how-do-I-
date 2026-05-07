@@ -17,7 +17,7 @@
   <!-- tags:start -->
   <p>
     <img src="https://img.shields.io/badge/WSL-green?style=for-the-badge" alt="tag:WSL" />
-    <img src="https://img.shields.io/badge/CLion-blue?style=for-the-badge" alt="tag:CLion" />
+    <img src="https://img.shields.io/badge/CLion-yellow?style=for-the-badge" alt="tag:CLion" />
     <img src="https://img.shields.io/badge/Setup-orange?style=for-the-badge" alt="tag:Setup" />
     <img src="https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge" alt="tag:Beginner Friendly" />
   </p>

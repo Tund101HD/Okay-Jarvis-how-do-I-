@@ -27,11 +27,11 @@ Below are some of my favorite guides, or guides I would've thought to be the mos
 guides into a natural ordering under their topics (such as ASM, C++, CLion, WSL), but if you want to quickly search something, 
 you can always check my portfolio site where all guides are indexed and searchable.
 
-| Protocol / Guide | Description | Tech Stack | Updated |                                                                                                                                       Tags                                                                                                                                       |
-| :--- | :--- | :---: | :---: |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [**Assemble in CLion**](./assembly/guides/clion-nasm.md) | How to set up CLion to play around with NASM assembly without losing your mind. | `CLion` `NASM` | 29/04/2026 |                                       ![](https://img.shields.io/badge/ASM-blue?style=for-the-badge) ![](https://img.shields.io/badge/CLion-blue?style=for-the-badge) ![](https://img.shields.io/badge/Setup-orange?style=for-the-badge)     <img src="https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge" alt="tag:Beginner Friendly" />
-|
-| [**CLion Meets WSL**](./wsl/guides/clion-wsl-setup.md) | Native Linux builds in CLion without leaving Windows — the painless WSL setup. | `CLion` `WSL2` | 29/04/2026 | ![](https://img.shields.io/badge/WSL-green?style=for-the-badge) ![](https://img.shields.io/badge/CLion-blue?style=for-the-badge) ![](https://img.shields.io/badge/Setup-orange?style=for-the-badge) ![](https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge) |
+| Protocol / Guide | Description | Tech Stack | Updated | Tags |
+| :--- | :--- | :---: | :---: | :---: |
+| [**Assemble in CLion**](./assembly/guides/clion-nasm.md) | How to set up CLion to play around with NASM assembly without losing your mind. | `CLion` `NASM` | 29/04/2026 | ![](https://img.shields.io/badge/ASM-blue?style=for-the-badge) ![](https://img.shields.io/badge/CLion-yellow?style=for-the-badge) ![](https://img.shields.io/badge/Setup-orange?style=for-the-badge) ![](https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge) |
+| [**CLion Meets WSL**](./wsl/guides/clion-wsl-setup.md) | Native Linux builds in CLion without leaving Windows — the painless WSL setup. | `CLion` `WSL2` | 29/04/2026 | ![](https://img.shields.io/badge/WSL-green?style=for-the-badge) ![](https://img.shields.io/badge/CLion-yellow?style=for-the-badge) ![](https://img.shields.io/badge/Setup-orange?style=for-the-badge) ![](https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge) |
+| [**Cross-Compile MIPS in CLion**](./assembly/guides/clion-mips.md) | Build, run, and debug MIPS assembly in CLion — cross-compiled in WSL, executed under QEMU, debugged via gdb-multiarch. | `CLion` `MIPS` | 06/05/2026 | ![](https://img.shields.io/badge/ASM-blue?style=for-the-badge) ![](https://img.shields.io/badge/MIPS-blue?style=for-the-badge) ![](https://img.shields.io/badge/CLion-yellow?style=for-the-badge) ![](https://img.shields.io/badge/WSL-green?style=for-the-badge) ![](https://img.shields.io/badge/Setup-orange?style=for-the-badge) ![](https://img.shields.io/badge/Beginner_Friendly-pink?style=for-the-badge) |
 
 ## How to Use This Repo
 
@@ -87,7 +87,8 @@ Did you spend an entire Sunday figuring out a hyper-specific setup that the inte
 - **Tag color palette** (reuse before inventing — consistency keeps the index column readable):
   - `WSL` → green
   - `ASM` → blue
-  - `CLion` → blue
+  - `MIPS` → blue
+  - `CLion` → yellow
   - `Setup` → orange
   - `Beginner Friendly` → pink
 - **Hide from the portfolio index** — add `<img src="https://img.shields.io/badge/no--index-lightgrey?style=for-the-badge" alt="tag:no-index" />` to the tag block. The badge stays visible on GitHub but the parser skips the guide.
